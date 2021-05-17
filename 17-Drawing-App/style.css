@@ -14,9 +14,30 @@ body {
 
 canvas {
   border: 2px solid steelblue;
+  width: 80vw;
+  height: 80vh;
 }
 
 .toolbox {
   background-color: steelblue;
   border: 1px solid steelblue;
+  display: flex;
+  width: 80vw;
+  padding: 0.5rem;
+}
+.toolbox > * {
+  background-color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+.toolbox > *:last-child {
+  margin-left: auto;
 }
