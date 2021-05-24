@@ -14,15 +14,13 @@ body {
 
 canvas {
   border: 2px solid steelblue;
-  width: 80vw;
-  height: 80vh;
 }
 
 .toolbox {
   background-color: steelblue;
   border: 1px solid steelblue;
   display: flex;
-  width: 80vw;
+  width: 805px;
   padding: 0.5rem;
 }
 .toolbox > * {
