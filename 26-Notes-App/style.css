@@ -53,6 +53,8 @@ body {
 }
 .main {
   padding: 20px;
+  height: 400px;
+  width: 100%;
 }
 
 .hidden {

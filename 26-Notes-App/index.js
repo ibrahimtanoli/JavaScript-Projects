@@ -1,5 +1,6 @@
 const addBtn = document.getElementById('add')
 
+// Add Note
 addBtn.addEventListener('click', () => addNewNote())
 
 function addNewNote(text = '') {
@@ -36,6 +37,16 @@ function addNewNote(text = '') {
   editBtn.addEventListener('click', () => {
     main.classList.toggle('hidden')
     textArea.classList.toggle('hidden')
+  })
+
+  //TextArea
+
+  textArea.value = text
+  main.innerHTML = marked(text)
+
+  textArea.addEventListener('input', (e) => {
+    const { value } = e.target
+    main.innerHTML = marked(value)
   })
 
   document.body.appendChild(note)
